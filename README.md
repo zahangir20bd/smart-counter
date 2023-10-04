@@ -6,7 +6,7 @@ Top Two features:
 - Multiple Counter Generate System
 - Specific Counter Remove System
 
-Currently, two official plugins are available:
+There are two important links:
 
-- [Live Site](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [GitHub Repo](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Live Site](https://comforting-melomakarona-6e4349.netlify.app/)
+- [GitHub Repo](https://github.com/zahangir20bd/smart-counter)
