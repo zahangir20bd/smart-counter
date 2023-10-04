@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { FaCircleXmark } from "react-icons/fa6";
@@ -7,10 +6,12 @@ const InitialCounter = ({ onRemove, id }) => {
   const [view, setView] = useState(false);
   const [initialValue, setInitialValue] = useState(0);
 
+  // Set Value button and input field Toggle Handler
   const handleView = () => {
     setView(true);
   };
 
+  // Set Value Handler
   const handleSetValue = (event) => {
     event.preventDefault();
     const value = event.target.value.value;
@@ -18,10 +19,12 @@ const InitialCounter = ({ onRemove, id }) => {
     setView(false);
   };
 
+  // Increment Handler
   const handleIncrement = () => {
     setInitialValue(initialValue + 1);
   };
 
+  // Decrement Handler
   const handleDecrement = () => {
     if (initialValue === 0) {
       return;
@@ -30,12 +33,14 @@ const InitialCounter = ({ onRemove, id }) => {
     }
   };
 
+  // Counter clear Handler
   const handleClear = () => {
     setInitialValue(0);
   };
 
+  // Duplicate Counter Remove Handler
   const handleRemoveClick = () => {
-    onRemove();
+    onRemove(id);
   };
 
   return (
